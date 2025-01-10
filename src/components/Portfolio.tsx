@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion";
-import project from "../assets/project.png"
 import proje1 from "../assets/proje1.png"
 import proje2 from "../assets/proje2.png"
 import proje3 from "../assets/proje3.png"
