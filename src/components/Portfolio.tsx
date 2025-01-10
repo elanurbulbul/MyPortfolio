@@ -62,7 +62,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center'>
-                        <Image alt={project.title} src={project.src} className='h-[400px] lg:h-[300px] w-auto '/>
+                        <Image alt={project.title} src={project.src} className='h-auto aspect-[2/1]  w-full '/>
                     </div>
 
                 </motion.div>

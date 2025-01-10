@@ -15,7 +15,7 @@ const Hero = () => {
           <h1 className="text-[#98B4CE]">Hello, I am</h1>
           <h1 className="text-[#E48A57]">Elanur Bulbul</h1>
         </div>
-        <motion.div className="absolute left-[160px] top-[170px]" drag>
+        <motion.div className="absolute top-[20px] lg:left-[160px] lg:top-[170px]" drag>
           <Image
             alt="cursor"
             src={cursor}
@@ -25,7 +25,7 @@ const Hero = () => {
             draggable="false"
           />
         </motion.div>
-        <motion.div className="absolute right-[220px] top-[20px]" drag>
+        <motion.div className="absolute right-[40px] top-[10px] lg:right-[220px] lg:top-[20px]" drag>
           <Image
             alt="cursor"
             src={lightning}

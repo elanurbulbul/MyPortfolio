@@ -9,8 +9,10 @@ import skills from "../assets/skills.png";
 const About = () => {
   return (
     <div className="max-w-[1200px] p-10 lg:p-4 mx-auto" id="about">
-        <h1 className="text-white text-6xl max-w-[320px] mx-auto font-semibold p-4 mb-4">About
-            <span className="text-orange-500">Me</span></h1>
+      <h1 className="text-white text-6xl max-w-[320px] mx-auto font-semibold p-4 mb-4">
+        About 
+        <span className="text-orange-500"> Me</span>
+      </h1>
 
       <div className="grid grid-cols-12 gap-4 place-items-center">
         <div className="w-full flex items-center col-span-12 lg:col-span-5 lg:min-h-[260px] relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
@@ -42,7 +44,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:min-h-[300px] flex items-center col-span-12 lg:col-span-7 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
+        <div className="w-full lg:min-h-[388px] xl:min-h-[300px] flex items-center col-span-12 lg:col-span-7 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
           <div className="flex items-center flex-row p-6">
             <Image src={experience} alt="book" className="w-auto h-[180px]" />
@@ -58,7 +60,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full  lg:min-h-[300px] flex items-center col-span-12 lg:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
+        <div className="w-full  lg:min-h-[388px] xl:min-h-[300px] flex items-center col-span-12 lg:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
           <div className="flex items-center flex-row p-6">
             <Image src={skills} alt="book" className="w-auto h-[180px]" />
