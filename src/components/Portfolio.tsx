@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 // import {motion} from "framer-motion"
 // import project from "../assets/project.png"
 // import proje1 from "../assets/proje1.png"
