@@ -23,10 +23,27 @@ const Navbar = () => {
   const closeNav = () => {
     setNav(false);
   };
+  const menuVariants = {
+    open: {
+      x: 0,
+      transition: {
+        stiffness: 30,
+        damping: 15,
+      },
+    },
+    closed: {
+      x: "-100%",
+      transition: {
+        stiffness: 30,
+        damping: 15,
+      },
+    },
+  };
+
   return (
-    <div className=" bg-black text-white/70 pt-6">
+    <div className="  md:min-h-5 min-h-24 text-white/70 py-2">
       <div className="hidden md:flex items-center px-4 py-1 mx-auto max-w-[400px]">
-        <ul className="flex flex-row p-4 space-x-8 items-center">
+        <ul className="flex text-lg flex-row p-4 space-x-8 items-center">
           {navLinks.map((link, index) => (
             <li key={index}>
               <Link href={link.path}>
@@ -36,7 +53,7 @@ const Navbar = () => {
           ))}
           <li>
             <a href="#contact" className="group">
-              <h1 className="txt-lg font-bold text-white/70 cursor-pointer">
+              <h1 className="text-lg font-bold text-white/70 cursor-pointer">
                 Contact Me
               </h1>
               <div className="relative">
@@ -47,9 +64,28 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div onClick={toggleNav}>
-        {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>} 
+      <div
+        onClick={toggleNav}
+        className=" md:hidden absolute top-5 right-5 border rounded text-white/70 border-white/70 p-2 z-50"
+      >
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
+      <motion.div
+        initial={false}
+        animate= {nav ? 'open' : 'closed'}
+        variants={menuVariants}
+        className=" fixed left-0 top-0 w-full z-40 bg-slate-800/90"
+      >
+        <ul className="text-3xl font-semibold my-24 text-center space-y-4">
+        {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.path} onClick={closeNav}>
+                <p >{link.title}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>  
+      </motion.div>
     </div>
   );
 };
