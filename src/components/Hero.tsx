@@ -31,15 +31,14 @@ const Hero = () => {
             src={lightning}
             height="120"
             width="120"
-            className=""
             draggable="false"
           />
         </motion.div>
 
         <p className="text-center text-xl max-w-[500px] mx-auto mt-8 text-white/80">
-          "I am a front-end developer focused on building websites that provide
+          I am a front-end developer focused on building websites that provide
           the best experience to users. I am also working on backend development
-          and continuously improving my skills."{" "}
+          and continuously improving my skills.
         </p>
 
         <Image
