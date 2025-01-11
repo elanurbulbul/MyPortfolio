@@ -25,7 +25,7 @@ const Hero = () => {
             draggable="false"
           />
         </motion.div>
-        <motion.div className="absolute right-[40px] top-[10px] lg:right-[220px] lg:top-[20px]" drag>
+        <motion.div className=" absolute right-[40px] top-[10px] lg:right-[220px] lg:top-[20px]" drag>
           <Image
             alt="cursor"
             src={lightning}

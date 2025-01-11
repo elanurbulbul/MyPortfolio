@@ -6,7 +6,7 @@ import mail from "../assets/mail.png"
 
 const Contact = () => {
   return (
-    <div className='max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 p-8
+    <div className='max-w-[1000px] mx-auto flex items-center flex-col lg:flex-row text-white/70 p-8
     pounded-lg space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
         <div className='flex justify-center items-center'>
             <ul className='space-y-4'>
@@ -21,11 +21,11 @@ const Contact = () => {
             </ul>
         </div>
         
-        <div className='bg-white-10 p-6 rounded-xl max-w-[550px]'>
-        <h2 className='text-5xl font-bold text-orange-400 mb-4'>Let&apos;s connect</h2>
-        <p className='text-white/70 mb-6'> Send me a message and lets schedule a call!</p>
+        <div className='bg-slate-900 p-6 rounded-xl max-w-[550px]'>
+        <h2 className='text-5xl lg:text-start text-center font-bold text-orange-400 mb-4'>Let&apos;s connect</h2>
+        <p className='text-white/70 mb-6 lg:text-start text-center'> Send me a message and lets schedule a call!</p>
             <form className='space-y-4' action="https://getform.io/f/bejjprqa" method='POST'>
-                <div className='grid md:grid-cols-2 gap-4'>
+                <div className='grid md:grid-cols-2 gap-4 '>
                     <input type='text' name='name' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='First Name' />
                     <input type='text' name='name' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Last Name' />
                     <input type='email' name='email' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Email' />
