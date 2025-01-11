@@ -15,7 +15,10 @@ const Hero = () => {
           <h1 className="text-[#98B4CE]">Hello, I am</h1>
           <h1 className="text-[#E48A57]">Elanur Bulbul</h1>
         </div>
-        <motion.div className="absolute top-[20px] lg:left-[160px] lg:top-[170px]" drag>
+        <motion.div
+          className="absolute top-[10px] left-[20px] w-20 md:w-40 md:top-[80px] lg:left-[160px] lg:top-[170px]"
+          drag
+        >
           <Image
             alt="cursor"
             src={cursor}
@@ -25,7 +28,10 @@ const Hero = () => {
             draggable="false"
           />
         </motion.div>
-        <motion.div className=" absolute right-[40px] top-[10px] lg:right-[220px] lg:top-[20px]" drag>
+        <motion.div
+          className=" absolute top-[10px] right-[20px] w-20 md:w-40  md:right-[40px] md:top-[10px] lg:right-[220px] lg:top-[20px]"
+          drag
+        >
           <Image
             alt="cursor"
             src={lightning}
@@ -40,14 +46,15 @@ const Hero = () => {
           the best experience to users. I am also working on backend development
           and continuously improving my skills.
         </p>
-
-        <Image
-          alt="profile picture"
-          src={profilePic}
-          className="h-auto w-auto mx-auto relative"
-          width="400"
-          height="400"
-        />
+        <div>
+          <Image
+            alt="profile picture"
+            src={profilePic}
+            className="h-auto w-auto mx-auto relative "
+            width="400"
+            height="400"
+          />
+        </div>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const About = () => {
       <div className="grid grid-cols-12 gap-4 place-items-center">
         <div className="w-full flex items-center col-span-12 lg:col-span-5 lg:min-h-[260px] relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
-          <div className="flex items-center flex-row p-6 ">
+          <div className="flex flex-col items-center md:flex-row p-6 ">
             <Image src={book} alt="book" className="w-auto h-[130px]" />
             <div className="flex flex-col mt-4">
               <h2 className="text-2xl font-bold text-white/80">Education</h2>
@@ -30,7 +30,7 @@ const About = () => {
         </div>
         <div className="w-full flex items-center  col-span-12 lg:col-span-7 lg:min-h-[260px] relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
-          <div className="flex flex-row p-6">
+          <div className="flex flex-col items-center md:flex-row p-6">
             <Image src={pc} alt="book" className="w-auto h-[130px]" />
             <div className="flex flex-col mt-4">
               <h2 className="text-2xl font-bold text-white/80">
@@ -46,7 +46,7 @@ const About = () => {
         </div>
         <div className="w-full lg:min-h-[388px] xl:min-h-[300px] flex items-center col-span-12 lg:col-span-7 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
-          <div className="flex items-center flex-row p-6">
+          <div className="flex flex-col items-center md:flex-row p-6">
             <Image src={experience} alt="book" className="w-auto h-[180px]" />
             <div className="flex flex-col mt-4">
               <h2 className="text-2xl font-bold text-white/80">Experience</h2>
@@ -62,7 +62,7 @@ const About = () => {
         </div>
         <div className="w-full  lg:min-h-[388px] xl:min-h-[300px] flex items-center col-span-12 lg:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
-          <div className="flex items-center flex-row p-6">
+          <div className="flex flex-col items-center md:flex-row p-6">
             <Image src={skills} alt="book" className="w-auto h-[180px]" />
             <div className="flex flex-col mt-4">
               <h2 className="text-2xl font-bold text-white/80">
