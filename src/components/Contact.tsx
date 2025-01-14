@@ -26,13 +26,13 @@ const Contact = () => {
         <p className='text-white/70 mb-6 lg:text-start text-center'> Send me a message and lets schedule a call!</p>
             <form className='space-y-4' action="https://getform.io/f/bejjprqa" method='POST'>
                 <div className='grid md:grid-cols-2 gap-4 '>
-                    <input type='text' name='name' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='First Name' />
-                    <input type='text' name='name' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Last Name' />
+                    <input type='text' name='first_name' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='First Name' />
+                    <input type='text' name='last_name' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Last Name' />
                     <input type='email' name='email' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Email' />
                     <input type='phone' name='phone' className='bg-black/70 rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Phone' />
 
                 </div>
-                <textarea className='bg-black/70 w-full rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Your Message' />
+                <textarea name='message' className='bg-black/70 w-full rounded-xl p-3 focus: outline-none focus:ring-2 focus:ring-orange-400' placeholder='Your Message' />
                 <button className='bg-orange-700 hover:bg-orange-500 text-white px-6 py-2 w-full font-semibold text-xl rounded-xl'>Send Message</button>
             </form>
         </div>    
