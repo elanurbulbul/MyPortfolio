@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#000,#2B2066_25%,#8F5C59_60%,#DBAF69_80%)]">
       <div className="absolute rounded-[50%] w-[3000px] h-[1300px] bg-[radial-gradient(closest-side,#000_80%,#2B2066)] top-[600px] left-[50%] -translate-x-1/2 -z-1"></div>
       <div className="">
-        <div className="text-6xl text-white font-semibold italic text-center font-sans">
+        <div className=" text-white font-semibold italic text-center font-sans">
           <h1 className="text-[#98B4CE]">Hello, I am</h1>
           <h1 className="text-[#E48A57]">Elanur Bulbul</h1>
         </div>

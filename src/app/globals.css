@@ -32,3 +32,12 @@ body {
   animation: gradient-xy 5s infinite;
   background-size: 200% 200%;
 }
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 45px;
+}
+h4{
+  font-size: 25px;
+}

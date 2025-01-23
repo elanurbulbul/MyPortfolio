@@ -36,11 +36,11 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className='text-white bg-gradient-to-b from-black to-[#381a5f] py-16 mt-12 ' id='portfolio'>
-         <h1 className="text-white text-6xl max-w-[320px] mx-auto font-semibold my-12">Selected <br/>
-            <span className="text-orange-500">Projects</span></h1>
+    <div className=' text-white bg-gradient-to-b from-black to-[#381a5f] py-24 pb-28 ' id='portfolio'>
+         <h2 className="text-white  font-sans text-center mx-auto font-semibold mb-8">Selected 
+            <span className="text-orange-500"> Projects</span></h2>
 
-        <div className='max-w-[1200px] mx-auto space-y-24 lg:px-4 px-10'>
+        <div className='max-w-[1400px] px-20 lg:px-16 xxl:px-0 mx-auto space-y-24 '>
             {projects.map((project, index) => (
                 <motion.div
                     key={index}
@@ -48,11 +48,11 @@ const Portfolio = () => {
                     whileInView={{opacity:1,y:0}}
                     viewport={{once:true}}
                     transition={{duration:0.5, delay:0.25}}
-                    className={`gap-8  flex ${index % 2 === 1 ? "flex-col-reverse lg:flex-row-reverse " : "flex-col lg:flex-row"}`}
+                    className={`gap-8  flex justify-between ${index % 2 === 1 ? "flex-col-reverse lg:flex-row-reverse " : "flex-col lg:flex-row"}`}
                 >
-                    <div className='space-y-2 max-w-[550px]'>
-                        <h2 className='text-7xl  text-white/70'>{`0${index + 1}`}</h2>
-                        <h2 className='font-bold text-4xl'>{project.title}</h2>
+                    <div className='space-y-2 max-w-full lg:max-w-[460px] xl:max-w-[600px] mb-2'>
+                        <h4 className='  text-white/70'>{`0${index + 1}`}</h4>
+                        <h4 className='font-bold '>{project.title}</h4>
                         <p className='text-xl text-white/70 break-words '>{project.desc}</p>
                         <p className='text-xl text-orange-500 font-semibold'>{project.devStack}</p>
                         <div className='w-64 h-[1px] bg-gray-400 my-8 '>
@@ -61,7 +61,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center'>
-                        <Image alt={project.title} src={project.src} className='h-auto aspect-[2/1]  w-full '/>
+                        <Image alt={project.title} src={project.src} className='h-auto aspect-[2/1] rounded-xl  w-full '/>
                     </div>
 
                 </motion.div>
