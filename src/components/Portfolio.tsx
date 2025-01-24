@@ -36,11 +36,11 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className=' text-white bg-gradient-to-b from-black to-[#381a5f] py-24 pb-28 ' id='portfolio'>
-         <h2 className="text-white  font-sans text-center mx-auto font-semibold mb-8">Selected 
+    <div className=' text-white bg-gradient-to-b from-black to-[#381a5f] py-16 lg:py-24 pb-20 lg:pb-28 ' id='portfolio'>
+         <h2 className="text-white   font-sans text-center mx-auto font-semibold mb-8">Selected 
             <span className="text-orange-500"> Projects</span></h2>
 
-        <div className='max-w-[1400px] px-20 lg:px-16 xxl:px-0 mx-auto space-y-24 '>
+        <div className='max-w-[1400px] px-10 lg:px-16 xxl:px-0 mx-auto space-y-24 '>
             {projects.map((project, index) => (
                 <motion.div
                     key={index}

@@ -8,7 +8,7 @@ const Footer = () => {
       className="  text-white/70 py-4  mx-auto border-t border-gray-700
                      "
     >
-      <div className="px-12 flex justify-between items-center">
+      <div className="px-6 lg:px-12 flex justify-between items-center">
         <p className=" text-2xl font-bold">Elanur Bulbul</p>
         <div className="flex space-x-6 ">
           <a

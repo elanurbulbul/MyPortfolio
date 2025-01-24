@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#000,#2B2066_25%,#8F5C59_60%,#DBAF69_80%)]">
+    <div className="py-16 lg:py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#000,#2B2066_25%,#8F5C59_60%,#DBAF69_80%)]">
       <div className="absolute rounded-[50%] w-[3000px] h-[1300px] bg-[radial-gradient(closest-side,#000_80%,#2B2066)] top-[600px] left-[50%] -translate-x-1/2 -z-1"></div>
       <div className="">
         <div className=" text-white font-semibold italic text-center font-sans">
