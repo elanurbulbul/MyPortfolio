@@ -8,7 +8,7 @@ import skills from "../assets/skills.png";
 
 const About = () => {
   return (
-    <div className="py-16 lg:py-24 max-w-[1400px] px-10 lg:px-16 xxl:px-0 mx-auto my-4" id="about">
+    <div className="py-16 lg:py-24 max-w-[1400px] px-10 lg:px-16 xxl:px-0 mx-auto mb-6" id="about">
       <h2 className="text-white text-center font-semibold px-4 mb-8 font-sans">
         About 
         <span className="text-orange-500"> Me</span>
