@@ -7,7 +7,8 @@ import mail from "../assets/mail.png";
 const Contact = () => {
   return (
     <div
-      className="max-w-[1400px]  grid grid-cols-12  items-center justify-between text-white/70 px-10 lg:px-16 xxl:px-0 py-16 lg:py-24"
+      className="max-w-[1400px] m-auto grid grid-cols-12  items-center justify-between text-white/70 px-10 lg:px-16 xxl:px-0 py-16 lg:py-24"
+       style={{ margin: "auto" }}
       id="contact"
     >
       <div className="col-span-12 lg:col-span-4 flex flex-col items-center h-100  justify-between">
@@ -90,5 +91,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;
