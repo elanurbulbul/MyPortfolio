@@ -1,3 +1,4 @@
+import { LanguageProvider } from "@/components/LanguageProvider";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -8,7 +9,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <>
+    <LanguageProvider>
       <Navbar />
       <Hero />
       <About />
@@ -16,6 +17,6 @@ export default function Home() {
       <Skills/>
       <Contact />
       <Footer />
-    </>
+    </LanguageProvider>
   );
 }

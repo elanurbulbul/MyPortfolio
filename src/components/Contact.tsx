@@ -3,8 +3,13 @@ import React from "react";
 import Image from "next/image";
 import phone from "../assets/phone.png";
 import mail from "../assets/mail.png";
+import { useLanguage } from "./LanguageProvider";
+import { getTranslations } from "@/data/translations";
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const t = getTranslations(language);
+
   return (
     <div
       className="max-w-[1400px] m-auto grid grid-cols-12  items-center justify-between text-white/70 px-10 lg:px-16 xxl:px-0 py-16 lg:py-24"
@@ -14,10 +19,10 @@ const Contact = () => {
       <div className="col-span-12 lg:col-span-4 flex flex-col items-center h-100  justify-between">
         <div>
         <h2 className="lg:text-start text-center font-semibold font-sans text-orange-400 ">
-          Let&apos;s connect
+          {t.contact.title}
         </h2>
         <p className="text-white/70 mb-2 lg:text-start text-center">
-          Send me a mail and let&apos;s schedule a call!
+          {t.contact.description}
         </p>
         </div>
      <div className=" flex flex-col sm:flex-row lg:flex-col items-center lg:items-start justify-evenly space-x-0 md:space-x-4 lg:space-x-0 lg:space-y-2 lg:mb-0">
@@ -51,28 +56,28 @@ const Contact = () => {
               type="text"
               name="first_name"
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="First Name"
+              placeholder={t.contact.firstName}
             />
             <input
               required
               type="text"
               name="last_name"
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Last Name"
+              placeholder={t.contact.lastName}
             />
             <input
               required
               type="email"
               name="email"
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Email"
+              placeholder={t.contact.email}
             />
             <input
               required
               type="phone"
               name="phone"
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Phone"
+              placeholder={t.contact.phone}
             />
           </div>
           <div className="flex flex-col items-center">
@@ -80,10 +85,10 @@ const Contact = () => {
               required
               name="message"
               className="bg-black/70 w-full rounded-xl p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Your Message"
+              placeholder={t.contact.message}
             />
             <button className="bg-orange-700 hover:bg-orange-500 text-white py-2 px-12 mx-auto font-semibold text-xl rounded-xl">
-              Send Message
+              {t.contact.button}
             </button>
           </div>
         </form>
