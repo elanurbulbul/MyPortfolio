@@ -16,6 +16,10 @@ const Navbar = () => {
       path: "#about",
     },
     {
+      title: t.nav.experience,
+      path: "#experience",
+    },
+    {
       title: t.nav.portfolio,
       path: "#portfolio",
     },

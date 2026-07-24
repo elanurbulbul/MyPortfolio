@@ -74,7 +74,7 @@ const Contact = () => {
             />
             <input
               required
-              type="phone"
+              type="tel"
               name="phone"
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder={t.contact.phone}

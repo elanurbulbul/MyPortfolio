@@ -45,6 +45,19 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
+            <div className='mt-8 grid gap-3 text-left md:grid-cols-2'>
+                {t.skills.groups.map((group) => (
+                    <div
+                        key={group.title}
+                        className='rounded-xl border border-white/10 bg-white/[0.07] p-5'
+                    >
+                        <h3 className='mb-2 text-lg font-semibold text-orange-400'>
+                            {group.title}
+                        </h3>
+                        <p className='leading-7 text-white/65'>{group.items}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
   )

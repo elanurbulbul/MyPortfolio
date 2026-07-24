@@ -55,8 +55,8 @@ const Portfolio = () => {
                         <p className='text-xl text-white/70 break-words '>{project.desc}</p>
                         <p className='text-xl text-orange-500 font-semibold'>{project.devStack}</p>
                         <div className='w-64 h-[1px] bg-gray-400 my-8 '>
-                            <a href={project.link} className='mr-6  cursor-pointer'>{t.portfolio.live}</a>
-                            <a href={project.gitHub} className='cursor-pointer'>{t.portfolio.github}</a>
+                            <a href={project.link} target="_blank" rel="noreferrer" className='mr-6 cursor-pointer hover:text-orange-400'>{t.portfolio.live}</a>
+                            <a href={project.gitHub} target="_blank" rel="noreferrer" className='cursor-pointer hover:text-orange-400'>{t.portfolio.github}</a>
                         </div>
                     </div>
                     <div className='flex justify-center items-center'>

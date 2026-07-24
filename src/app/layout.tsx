@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ELANUR BULBUL",
+  title: "Elanur Bülbül | Full Stack Developer",
   description:
     "Elanur Bülbül's portfolio showcasing software development projects, experience, and technical skills.",
   icons: {
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
